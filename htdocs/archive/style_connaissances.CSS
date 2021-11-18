@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@300&family=Dancing+Script&display=swap');
+@font-face {
+    font-family: "Advent Pro" ;
+    src: url(/font/Advent_Pro/AdventPro-Bold.ttf);
+    src: url(/font/Advent_Pro/AdventPro-ExtraLight.ttf);
+    src: url(/font/Advent_Pro/AdventPro-Light.ttf);
+    src: url(/font/Advent_Pro/AdventPro-Medium.ttf);
+    src: url(/font/Advent_Pro/AdventPro-Regular.ttf);
+    src: url(/font/Advent_Pro/AdventPro-SemiBold.ttf);
+    src: url(/font/Advent_Pro/AdventPro-Thin.ttf);
+}
+@font-face {
+    font-family: "Dancing Script" ;
+    src: url(/font/Dancing_Script/DancingScript-VariableFont_wght.ttf);
+ 
+}
+
+/* *********************** PAGE *********************** */
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Advent Pro', sans-serif;
+    background: url(media/Background.png);
+    background-size: cover;
+
+
+}
+ul {
+    font-family: 'Advent Pro', sans-serif;
+    margin: 0;
+    padding: 0%;
+    opacity: 1;
+
+}
+li {
+    list-style-type: none;
+}
+
+
+h2 { 
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 2em;
+}
+a {
+    color: white;
+}
+
+
+/* *********************** NAVBAR *********************** */ 
+
+nav {
+   
+    overflow: visible;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    opacity: 1;
+}
+header li {
+    font-family: 'AdventPro-Bold';
+    float: right;
+    font-size: 1.4em;
+}
+header li a {
+    font-family: 'AdventPro-Bold';
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 18px 16px;
+}
+
+#logo {
+    font-family: 'Dancing Stripe';
+    font-weight: bold;
+    float: left;
+}
+
+/* *********************** H1 *********************** */
+
+
+
+
+h1{
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    color: white;
+    font-size: 6em;
+    margin-top: 100px;
+    text-shadow: 1px 3px 2px black;
+}
+
+/* *********************** Bouton *********************** */
+
+.deroulant {
+
+    display: none;
+}
+
+.listevtubers {
+
+    display: flex;
+    justify-content: center;
+}
+#d1,#d2,#d3,#d4,#d5 {
+
+    font-family: 'Dancing Script', cursive;
+    font-size: 2em;
+    color: white;
+    display: none;
+
+}
+
+#togg1,#togg2,#togg3,#togg4,#togg5 {
+
+    width: 100px;
+    height: 100px;
+    background: none;
+    border: none;
+    display: flex;
+    cursor: pointer;
+    
+}
+
+button {
+
+    display: inline-block;
+    height: 134px;
+    padding: 0;
+    margin: 0;
+    vertical-align: top;
+    width: 104px;
+    
+
+}
+
+#togg1:hover {
+    
+    display: block;
+    height: 130px;  
+    width: 100px;
+
+}
+
+#togg2:hover {
+
+    display: block;
+    height: 130px;  
+    width: 100px;
+
+}
+
+#togg3:hover {
+
+    display: block;
+    height: 130px;  
+    width: 100px;
+
+}
+
+#togg4:hover {
+
+    display: block;
+    height: 130px;  
+    width: 100px;
+
+}
+
+#togg5:hover {
+
+    display: block;
+    height: 130px;  
+    width: 100px;
+
+}
+
+.bouton {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    }
+   
+/* *********************** Responsivité *********************** */
+
+@media screen and (max-width: 700px)
+{
+
+
+    h1{
+
+        font-size: 3em;
+    }
+
+    section
+    {
+		height: 260px;
+		width: 200px;
+		display: flex;
+		margin: auto;
+	
+    }
+
+    .bouton {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        }
+        
+    
+}

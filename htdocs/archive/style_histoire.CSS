@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@300&family=Dancing+Script&display=swap');
+@font-face {
+    font-family: "Advent Pro" ;
+    src: url(/font/Advent_Pro/AdventPro-Bold.ttf);
+    src: url(/font/Advent_Pro/AdventPro-ExtraLight.ttf);
+    src: url(/font/Advent_Pro/AdventPro-Light.ttf);
+    src: url(/font/Advent_Pro/AdventPro-Medium.ttf);
+    src: url(/font/Advent_Pro/AdventPro-Regular.ttf);
+    src: url(/font/Advent_Pro/AdventPro-SemiBold.ttf);
+    src: url(/font/Advent_Pro/AdventPro-Thin.ttf);
+}
+@font-face {
+    font-family: "Dancing Script" ;
+    src: url(/font/Dancing_Script/DancingScript-VariableFont_wght.ttf);
+ 
+}
+
+/* *********************** PAGE *********************** */
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Advent Pro', sans-serif;
+    background: url(media/Background.png);
+    background-size: cover;
+    margin: 0;
+
+}
+ul {
+    font-family: 'Advent Pro', sans-serif;
+    margin: 0;
+    padding: 0%;
+    opacity: 1;
+
+}
+li {
+    list-style-type: none;
+}
+
+
+h2 { 
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 2em;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/* *********************** NAVBAR *********************** */ 
+
+nav {
+   
+    overflow: visible;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    opacity: 1;
+}
+header li {
+    font-family: 'AdventPro-Bold';
+    float: right;
+    font-size: 1.4em;
+}
+header li a {
+    font-family: 'AdventPro-Bold';
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 18px 16px;
+}
+
+#logo {
+    font-family: 'Dancing Stripe';
+    font-weight: bold;
+    float: left;
+}
+
+/* *********************** H1 *********************** */
+
+
+
+
+h1{
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    color: white;
+    font-size: 6em;
+    margin-top: 100px;
+    text-shadow: 1px 3px 2px black;
+}
+
+/* *********************** TEXTE *********************** */
+
+ section
+    {
+        font-family: 'Dancing Script', cursive;
+        text-align: center;
+        color: white;
+        font-size: 2em;  
+        margin: auto;
+
+    }
+
+    /* *********************** GALLERY + DIMENSION IMAGE GALLERY *********************** */
+
+    .container{
+
+        margin: 10px 0 0 27%;
+        padding: 50px;
+        width: 40%;
+
+    }
+    .image {
+    
+
+        width: calc(1920px/10);
+        height: calc(1080px/10);
+       
+        
+    
+    }
+
+/* *********************** Responsitivité *********************** */
+
+
+@media screen and (max-width: 700px)
+{
+
+
+    h1{
+
+        font-size: 3em;
+    }
+
+    section
+    {
+		height: 260px;
+		width: 200px;
+		display: flex;
+		margin: auto;
+	
+    }
+
+   .container{
+
+        margin: 10px;
+        padding: 50px;
+        width: 40%;
+
+    }
+}
